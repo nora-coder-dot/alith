@@ -1,0 +1,13 @@
+[workspace]
+members = ["crates/*"]
+default-members = ["crates/core"]
+resolver = "2"
+
+[workspace.dependencies]
+alith-core = { path = "crates/core" }
+
+[workspace.package]
+version = "0.2.0"
+edition = "2021"
+rust-version = "1.83"
+exclude = [".github/"]
