@@ -14,12 +14,12 @@ use crate::embeddings::EmbeddingsError;
 use anyhow::Result;
 
 pub use llm_client as client;
+pub use llm_client::LlmClient;
 pub use llm_client::basic_completion::BasicCompletion;
 pub use llm_client::embeddings::Embeddings;
 pub use llm_client::interface::requests::completion::{CompletionRequest, CompletionResponse};
 pub use llm_client::models::api_model::ApiLlmModel;
 pub use llm_client::prelude::*;
-pub use llm_client::LlmClient;
 
 impl ResponseContent for CompletionResponse {
     fn content(&self) -> String {

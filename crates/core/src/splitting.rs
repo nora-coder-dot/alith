@@ -1,5 +1,5 @@
 pub use llm_client::utils::splitting::{
-    split_text_into_indices, Separator, SeparatorGroup, TextSplit, TextSplitter,
+    Separator, SeparatorGroup, TextSplit, TextSplitter, split_text_into_indices,
 };
 
 #[inline]

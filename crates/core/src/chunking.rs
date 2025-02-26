@@ -1,4 +1,4 @@
-pub use llm_client::utils::chunking::{chunk_text, ChunkerConfig, ChunkerResult, TextChunker};
+pub use llm_client::utils::chunking::{ChunkerConfig, ChunkerResult, TextChunker, chunk_text};
 
 pub const DEFAULT_CHUNK_SIZE: usize = 1024;
 

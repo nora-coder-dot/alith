@@ -1,8 +1,8 @@
+use crate::Ref;
 use crate::chat::{Completion, Request, ResponseContent, ResponseToolCalls, ToolCall};
 use crate::knowledge::Knowledge;
 use crate::memory::{Memory, Message};
 use crate::tool::Tool;
-use crate::Ref;
 use anyhow::Result;
 use mcp_client::McpClientTrait;
 use std::sync::Arc;

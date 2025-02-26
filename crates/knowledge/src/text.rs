@@ -2,7 +2,7 @@ use std::fs::read_to_string;
 use std::path::{Path, PathBuf};
 
 use alith_core::{
-    chunking::{chunk_text, Chunk, ChunkError},
+    chunking::{Chunk, ChunkError, chunk_text},
     knowledge::{FileKnowledge, Knowledge, KnowledgeError},
 };
 

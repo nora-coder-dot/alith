@@ -1,7 +1,7 @@
 use anyhow::Result;
+pub use mcp_client::McpService;
 pub use mcp_client::client::{ClientCapabilities, ClientInfo, McpClient, McpClientTrait};
 pub use mcp_client::transport::{SseTransport, StdioTransport, Transport};
-pub use mcp_client::McpService;
 use std::collections::HashMap;
 use std::time::Duration;
 use tracing_subscriber::EnvFilter;

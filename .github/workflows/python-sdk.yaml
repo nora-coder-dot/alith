@@ -16,12 +16,19 @@ permissions:
 
 env:
   PYO3_USE_ABI3_FORWARD_COMPATIBILITY: 1
+  RUST_VERSION: 1.85
 
 jobs:
   sdist:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: ${{ env.RUST_VERSION }}
+          override: true
+          components: clippy, rustfmt
       - name: Set up python
         uses: actions/setup-python@v4
         with:
